@@ -9,49 +9,50 @@ I am coming from C#, and aim to populate my _Kotlin from C#_ cheat sheet below a
 
 ## General
 
-### Function / Method
+### Function/Method
 
-#### Structure
+#### Signature structure
 
 > Kotlin
 <pre>
-  fun <b>functionName</b>(<b>inputParameterName</b>: <b>InputParameterType</b>): <b>ReturnType</b> {
-    // Logic
-  }
+fun <b>functionName</b>(<kbd><b>inputName</b></kbd>: <kbd><ins>InputType</ins></kbd>): <kbd><i>ReturnType</i></kbd> {
+  ...
+}
 </pre>
 
 > C#
 <pre>
-  <b>ReturnType</b> <b>MethodName</b>(<b>InputParameterType</b> <b>inputParameterName</b>)
-  {
-    // Logic;
-  }
+<kbd><i>ReturnType</i></kbd> <b>MethodName</b>(<kbd><ins>InputType</ins></kbd> <kbd><b>inputName</b></kbd>)
+{
+  ...
+}
 </pre>
 
 Example:
 
 > Kotlin
 <pre>
-  fun equalsOne(number: Int): Boolean {
-    return number == 1
-  }
+fun <b>equalsOne</b>(<kbd><b>number</b></kbd>: <kbd><ins>Int</ins></kbd>): <kbd><i>Boolean</i></kbd> {
+  return number == 1
+}
 </pre>
 
 > C#
 <pre>
-  bool EqualsOne(int number)
-  {
-    return number == 1;
-  }
+<kbd><i>bool</i></kbd> <b>EqualsOne</b>(<kbd><ins>int</ins></kbd> <kbd><b>number</b></kbd>)
+{
+  return number == 1;
+}
 </pre>
 
-When a method does not return anything, `ReturnType` is omitted in Kotlin:
+When a method does not return anything, <kbd><i>ReturnType</i></kbd> is omitted in Kotlin:
 
 > Kotlin
 <pre>
-  fun doNothing() { }
+fun <b>doNothing</b>() { }
 </pre>
+
 > C#
 <pre>
-  <b>void</b> DoNothing() { }
+<kbd><i>void</i></kbd> <b>DoNothing</b>() { }
 </pre>
