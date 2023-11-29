@@ -34,7 +34,7 @@ ReturnType MethodName(InputType inputName)
 ```
 </blockquote>
 
-#### Example
+##### Example
 
 <blockquote>
 Kotlin
@@ -73,4 +73,49 @@ C#
 ```
 void DoNothing() { }
 ```
+</blockquote>
+
+#### Default arguments / Optional arguments
+
+_Default arguments_ in Kotlin correspond to _optional arguments_ in C#. They are provided in the exact same way.
+
+<blockquote>
+  Kotlin
+
+  ```
+  fun equalsOne(number: Int = 1): Boolean {
+    return number == 1
+  }
+  ```
+</blockquote>
+
+<blockquote>
+  C#
+
+  ```
+  bool EqualsOne(int number = 1)
+  {
+    return number == 1;
+  }
+  ```
+</blockquote>
+
+#### Named arguments
+
+_Named arguments_ exist in both Kotlin and C#.
+
+<blockquote>
+  Kotlin
+
+  ```
+  equalsOne(number = 0)
+  ```
+</blockquote>
+
+<blockquote>
+  C#
+
+  ```
+  EqualsOne(number: 0)
+  ```
 </blockquote>
