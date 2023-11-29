@@ -7,11 +7,9 @@ I am coming from C#, and aim to populate my _Kotlin from C#_ cheat sheet below a
 
 # Kotlin from C# – Cheat sheet
 
-## General
+## Function/Method
 
-### Function/Method
-
-#### Signature structure
+### Signature structure
 
 <blockquote>
 Kotlin
@@ -34,7 +32,7 @@ ReturnType MethodName(InputType inputName)
 ```
 </blockquote>
 
-##### Example
+#### Example
 
 <blockquote>
 Kotlin
@@ -75,7 +73,7 @@ void DoNothing() { }
 ```
 </blockquote>
 
-#### Default arguments / Optional arguments
+### Default arguments / Optional arguments
 
 _Default arguments_ in Kotlin correspond to _optional arguments_ in C#. They are provided in the exact same way.
 
@@ -100,7 +98,7 @@ _Default arguments_ in Kotlin correspond to _optional arguments_ in C#. They are
   ```
 </blockquote>
 
-#### Named arguments
+### Named arguments
 
 _Named arguments_ exist in both Kotlin and C#.
 
