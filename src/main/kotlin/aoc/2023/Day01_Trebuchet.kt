@@ -1,7 +1,7 @@
 https://adventofcode.com/2023/day/1
 
 val intForWord = mapOf(
-	"1" to 1,
+    "1" to 1,
     "2" to 2,
     "3" to 3,
     "4" to 4,
@@ -27,7 +27,7 @@ fun main(input: Array<String>) {
 
     for (line in input) {
         sumPart1 += 10 * findFirstDigit(line) + findLastDigit(line)
-		sumPart2 += 10 * findFirstAlphanumericDigit(line) + findLastAlphanumericDigit(line)
+	sumPart2 += 10 * findFirstAlphanumericDigit(line) + findLastAlphanumericDigit(line)
     }
 
     println("Part 1: " + sumPart1)
