@@ -14,7 +14,7 @@ I am coming from C#, and aim to populate my _Kotlin from C#_ cheat sheet below a
 <blockquote>
 Kotlin
 
-```
+```kotlin
 fun functionName(inputName: InputType): ReturnType {
   ...
 }
@@ -24,7 +24,7 @@ fun functionName(inputName: InputType): ReturnType {
 <blockquote>
 C#
 
-```
+```csharp
 ReturnType MethodName(InputType inputName)
 {
   ...
@@ -37,7 +37,7 @@ ReturnType MethodName(InputType inputName)
 <blockquote>
 Kotlin
 
-```
+```kotlin
 fun equalsOne(number: Int): Boolean {
   return number == 1
 }
@@ -47,7 +47,7 @@ fun equalsOne(number: Int): Boolean {
 <blockquote>
 C#
 
-```
+```csharp
 bool EqualsOne(int number)
 {
   return number == 1;
@@ -60,7 +60,7 @@ When a function/method does not return anything, `ReturnType` is omitted in Kotl
 <blockquote>
 Kotlin
 
-```
+```kotlin
 fun doNothing() { }
 ```
 </blockquote>
@@ -68,7 +68,7 @@ fun doNothing() { }
 <blockquote>
 C#
 
-```
+```csharp
 void DoNothing() { }
 ```
 </blockquote>
@@ -80,7 +80,7 @@ _Default arguments_ in Kotlin correspond to _optional arguments_ in C#. They are
 <blockquote>
   Kotlin
 
-  ```
+  ```kotlin
   fun equalsOne(number: Int = 1): Boolean {
     return number == 1
   }
@@ -90,7 +90,7 @@ _Default arguments_ in Kotlin correspond to _optional arguments_ in C#. They are
 <blockquote>
   C#
 
-  ```
+  ```csharp
   bool EqualsOne(int number = 1)
   {
     return number == 1;
@@ -105,7 +105,7 @@ _Named arguments_ exist in both Kotlin and C#.
 <blockquote>
   Kotlin
 
-  ```
+  ```kotlin
   equalsOne(number = 0)
   ```
 </blockquote>
@@ -113,7 +113,7 @@ _Named arguments_ exist in both Kotlin and C#.
 <blockquote>
   C#
 
-  ```
+  ```csharp
   EqualsOne(number: 0)
   ```
 </blockquote>
@@ -129,7 +129,7 @@ A property that is not implemented inside the interface is automatically `abstra
 <blockquote>
   Kotlin
 
-  ```
+  ```kotlin
   interface Animal() {
     val legCount: Int
 
@@ -137,7 +137,7 @@ A property that is not implemented inside the interface is automatically `abstra
       get() = true
   }
   ```
-  ```
+  ```kotlin
   class Giraffe : Animal {
     override val legCount: Int = 4
   }
@@ -151,12 +151,12 @@ A property or function marked with the `open` keyword residing inside an inherit
 <blockquote>
   Kotlin
 
-  ```
+  ```kotlin
   open class Animal() {
     open val legCount: Int = 0
   }
   ```
-  ```
+  ```kotlin
   class Giraffe : Animal() {
     override val legCount = 4
   }
@@ -180,10 +180,10 @@ When overriding a class member without specifying the visibility, the visibility
 <blockquote>
   Kotlin
 
-  ```
+  ```kotlin
   fun showMeEverywhere() { }
   ```
-  ```
+  ```kotlin
   private fun hideMeOutside() { }
   ```
 </blockquote>
@@ -195,11 +195,11 @@ A class marked with the `open` keyword can be inherited.
 <blockquote>
   Kotlin
 
-  ```
+  ```kotlin
   open class Animal { }
   ```
 
-  ```
+  ```kotlin
   class Giraffe : Animal() { }
   ```
 </blockquote>
