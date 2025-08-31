@@ -203,3 +203,19 @@ A class marked with the `open` keyword can be inherited.
   class Giraffe : Animal() { }
   ```
 </blockquote>
+
+## Control flow
+
+### Loops and expressions
+
+Comparisons:
+
+| Kotlin | C# |
+|--------|----|
+| `if ( )` `else if ( )` `else` | `if ( )` `else if ( )` `else` |
+| `val result = if ( ) { "a" } else { "b" }` | `var result = ( ) ? "a" : "b";` |
+| `while ( )` | `while ( )` |
+| `for (item in items)` | `foreach (var item in items)` |
+| `for (i in items.indices)` | `for (var i = 0; i < items.Length; i++)` |
+| `for ((i, item) in items.withIndex())` | |
+| `[val result =] when ( )` `a -> 1` `else -> 0` | `[var result =] switch ( )` `a => 1` `_ => 0` |
